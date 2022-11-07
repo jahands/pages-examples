@@ -13,16 +13,32 @@ describe("pages", () => {
     expect(await get("/")).toMatchInlineSnapshot('"/functions/index.js"');
     expect(await get("")).toMatchInlineSnapshot('"/functions/index.js"');
 
-    expect(await get("/helloworld")).toMatchInlineSnapshot('"/functions/helloworld.js"');
-    expect(await get("/helloworld/")).toMatchInlineSnapshot('"/functions/helloworld.js"');
+    expect(await get("/helloworld")).toMatchInlineSnapshot(
+      '"/functions/helloworld.js"'
+    );
+    expect(await get("/helloworld/")).toMatchInlineSnapshot(
+      '"/functions/helloworld.js"'
+    );
 
-    expect(await get("/fruits/apple")).toMatchInlineSnapshot('"/functions/fruits/apple.js"');
-    expect(await get("/fruits/apple/")).toMatchInlineSnapshot('"/functions/fruits/apple.js"');
+    expect(await get("/fruits/apple")).toMatchInlineSnapshot(
+      '"/functions/fruits/apple.js"'
+    );
+    expect(await get("/fruits/apple/")).toMatchInlineSnapshot(
+      '"/functions/fruits/apple.js"'
+    );
 
-    expect(await get("/fruits/banana")).toMatchInlineSnapshot('"/functions/fruits/banana.js"');
-    expect(await get("/fruits/banana/")).toMatchInlineSnapshot('"/functions/fruits/banana.js"');
+    expect(await get("/fruits/banana")).toMatchInlineSnapshot(
+      '"/functions/fruits/banana.js"'
+    );
+    expect(await get("/fruits/banana/")).toMatchInlineSnapshot(
+      '"/functions/fruits/banana.js"'
+    );
 
-    expect(await get("/fruits")).toMatchInlineSnapshot('"/functions/fruits/index.js"');
-    expect(await get("/fruits/")).toMatchInlineSnapshot('"/functions/fruits/index.js"');
+    expect(await get("/fruits")).toMatchInlineSnapshot(
+      '"/functions/fruits/index.js"'
+    );
+    expect(await get("/fruits/")).toMatchInlineSnapshot(
+      '"/functions/fruits/index.js"'
+    );
   });
 });
